@@ -18,9 +18,11 @@ GUI para la aplicacion de rentas de cabañas en linea
    ```
 3. **Verificar la estructura esperada:**
    ```bash
-   .
+   # Estructura esperada
+   <carpeta-base>/
    ├── CasaDelValle
-   └── CDV_Frontend
+   └── CDV_Frontend/
+       └── Casa-Del-Valle-FE
    ```
 4. **Desde `CasaDelValle`, levantar el entorno con Docker Compose:**
    ```bash
