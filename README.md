@@ -29,3 +29,27 @@ GUI para la aplicacion de rentas de cabañas en linea
    cd CasaDelValle
    docker compose up --build
    ```
+
+## Estilo de diseño
+
+La aplicación usara la siguiente paleta de colores y se puede utilizar con su respectiva clase:
+- #4F5D2F -----> bg-green
+- #423629 -----> bg-brown
+- #EC4E20 -----> bg-orange
+- #EFE6D2 -----> bg-cream
+- #151515 -----> bg-black
+
+Se utilizará la siguiente fuente para titulos y encabezados: Serif ---> font-serif
+
+Se utilizará la siguiente fuente para cuerpo de texto, formularios, etc: Sans ---> font-sans
+
+## Guias
+
+Se habilitaron paginas temporales con una guía más detallada de como cumplir con los requerimientos manteniendo un mismo estándar.
+
+Se podran encontrar en las siguientes rutas del proyecto FE:
+- guide/user-story
+- guide/model
+- guide/design
+
+
