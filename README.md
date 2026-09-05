@@ -48,8 +48,8 @@ Se utilizará la siguiente fuente para cuerpo de texto, formularios, etc: Sans -
 Se habilitaron paginas temporales con una guía más detallada de como cumplir con los requerimientos manteniendo un mismo estándar.
 
 Se podran encontrar en las siguientes rutas del proyecto FE:
+- guide
 - guide/user-story
 - guide/model
 - guide/design
-
-
+- guide/backend
