@@ -76,8 +76,7 @@ export class CreateUserForm implements OnInit {
           Validators.minLength(8),
           Validators.maxLength(255)
         ]
-      ],
-      id_role: [1, Validators.required]
+      ]
     });
   }
 
@@ -88,11 +87,12 @@ export class CreateUserForm implements OnInit {
 
   create(): void {
     this.isCreated = true;
-    return
     if (this.userForm.valid) {
       const newUser = this.userForm.value as UserRequest;
 
-      this.userService.createUser(newUser).subscribe({
+      /**HABILITAR CUANDO ESTÉ LISTO EL ENDPOINT*/
+      /**
+       *this.userService.createUser(newUser).subscribe({
         next:() =>{
           this.isCreated = true;
         },
@@ -100,7 +100,8 @@ export class CreateUserForm implements OnInit {
           this.isError = true;
           this.errorMessage = error.error;
         }
-      });
+      }); 
+       */
     
     }
   }

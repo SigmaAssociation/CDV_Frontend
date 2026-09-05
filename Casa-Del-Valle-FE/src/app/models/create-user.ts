@@ -5,5 +5,4 @@ export interface UserRequest {
   dpi: string;
   email: string;
   password: string;
-  id_role: number;
 }
