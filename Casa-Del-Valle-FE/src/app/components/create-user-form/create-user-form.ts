@@ -17,7 +17,7 @@ export class CreateUserForm implements OnInit {
   errorMessage:string = '';
 
   private nameRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
-  private phoneRegex = /^[23456789]\d{7}$/;
+  private phoneRegex = /^[123456789]\d{7}$/;
   private addressRegex = /^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ\s,.\-#]+$/;
   private dpiRegex = /^\d{13}$/;
   private emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -90,18 +90,16 @@ export class CreateUserForm implements OnInit {
     if (this.userForm.valid) {
       const newUser = this.userForm.value as UserRequest;
 
-      /**HABILITAR CUANDO ESTÉ LISTO EL ENDPOINT*/
-      /**
-       *this.userService.createUser(newUser).subscribe({
+       this.userService.createUser(newUser).subscribe({
         next:() =>{
           this.isCreated = true;
         },
         error:(error) =>{
+          console.log(error);
           this.isError = true;
           this.errorMessage = error.error;
         }
       }); 
-       */
     
     }
   }
